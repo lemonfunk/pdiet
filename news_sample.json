@@ -20,7 +20,7 @@
     "summary": "This article demonstrates a standard news item. Clicking the card opens the main URL defined in the JSON. You can also have [links in the text](https://dart.dev) which open separately.",
     "url": "https://dart.dev",
     "publishedAt": "2024-05-30T09:00:00Z"
-  }
+  },
     {
       "id": "4",
       "title": "Neue Studie zeigt Vorteile regelmäßiger Bewegung",
