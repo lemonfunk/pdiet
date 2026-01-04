@@ -28,7 +28,7 @@
       margin: 0 auto;
     }
     header {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.25rem;
       padding: 1.5rem 1.75rem;
       border-radius: 16px;
       background: linear-gradient(135deg, #f5faf6, #ffffff);
@@ -43,14 +43,14 @@
     .subtitle {
       color: var(--gray);
       max-width: 720px;
-      margin: 0.75rem 0 2rem 0;
+      margin: 0.75rem 0 1.75rem 0;
       font-size: 1.05rem;
     }
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.25rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
     }
     .feature {
       border: 1px solid #e5e5e5;
@@ -73,26 +73,73 @@
       flex-wrap: wrap;
       align-items: center;
       gap: 1rem;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
     .cta button {
       background: var(--green);
       color: #fff;
       border: none;
       cursor: pointer;
-      padding: 0.75rem 1.25rem;
+      padding: 0.7rem 1.2rem;
       border-radius: 10px;
       font-weight: 600;
       font-size: 0.95rem;
     }
     .cta span {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: var(--gray);
     }
+    .privacy-hint {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
     footer {
-      margin-top: 2.5rem;
+      margin-top: 2.25rem;
       font-size: 0.8rem;
       color: #888;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    footer a {
+      color: #888;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .imprint-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    .imprint-content {
+      background: #fff;
+      max-width: 500px;
+      width: 100%;
+      border-radius: 12px;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--dark);
+    }
+    .imprint-content h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+    .imprint-content button {
+      margin-top: 1rem;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 0.9rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
     }
     @media (max-height: 700px) {
       .page { padding: 2rem 1rem; }
@@ -104,30 +151,30 @@
 <body>
   <main class="page">
     <header>
-      <img src="pdiet_header.png" alt="Die Physiker Diät Logo" />
+      <img src="logo_header.png" alt="Die Physiker Diät Logo" />
     </header>
 
     <p class="subtitle">
       Eine minimalistische <strong>Android‑App</strong>, um Erfolge bei der Gewichtsreduktion einfach zu <strong>tracken</strong> und
-      übersichtlich <strong>darzustellen</strong> – entwickelt für den Einsatz über den <strong>Google Play Store</strong>.
+      übersichtlich <strong>darzustellen</strong>. Der geschlossene Test erfolgt über den <strong>Google Play Store</strong>.
     </p>
 
     <section class="features">
       <div class="feature">
         <h3>🧪 Google Play Test</h3>
-        <p>Wir suchen ausschließlich Tester für die geschlossene Testphase über den Google Play Store.</p>
+        <p>Ausschließlich Einladung zur geschlossenen Testphase über Google Play.</p>
       </div>
       <div class="feature">
         <h3>🔒 100 % privat</h3>
-        <p>Kein Benutzeraccount, keine persönlichen Daten. Alle Informationen bleiben ausschließlich lokal auf deinem Handy.</p>
+        <p>Kein Account, keine persönlichen Daten, keine Cloud – alles bleibt lokal auf deinem Gerät.</p>
       </div>
       <div class="feature">
         <h3>📈 Klar & fokussiert</h3>
-        <p>Reduziert auf das Wesentliche: Gewicht erfassen, Fortschritt sehen, Motivation behalten.</p>
+        <p>Gewicht erfassen, Verlauf sehen, Motivation behalten.</p>
       </div>
       <div class="feature">
-        <h3>⚡ Schnell startklar</h3>
-        <p>App öffnen und loslegen – ohne Setup, ohne Anmeldung, ohne Umwege.</p>
+        <h3>⚡ Sofort startklar</h3>
+        <p>App öffnen und loslegen – ohne Setup oder Registrierung.</p>
       </div>
     </section>
 
@@ -136,10 +183,32 @@
       <span>Kontakt bitte mit deiner <strong>Google‑E‑Mail‑Adresse</strong></span>
     </section>
 
+    <div class="privacy-hint">
+      Weitere Informationen zum Datenschutz findest du in der Datenschutzerklärung der App.
+    </div>
+
     <footer>
-      Google Play App‑Tester gesucht · Die Physiker Diät
+      <span>Google Play App‑Tester gesucht · Die Physiker Diät</span>
+      <a onclick="openImprint()">Impressum</a>
+      <a href="https://github.com/lemonfunk/pdiet/blob/main/pp.html" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>
     </footer>
   </main>
+
+  <div class="imprint-modal" id="imprint">
+    <div class="imprint-content">
+      <h2>Impressum</h2>
+      <p><strong>Angaben gemäß § 5 TMG</strong></p>
+      <p>
+        Max Mustermann<br />
+        Musterstraße 12<br />
+        12345 Musterstadt
+      </p>
+      <p>
+        E‑Mail: max.mustermann@example.de
+      </p>
+      <button onclick="closeImprint()">Schließen</button>
+    </div>
+  </div>
 
   <script>
     function showMail() {
@@ -147,6 +216,14 @@
       const domain = 'gmx.net';
       const subject = 'Google%20Play%20App%20Test%20–%20Die%20Physiker%20Diät';
       window.location.href = `mailto:${user}@${domain}?subject=${subject}`;
+    }
+
+    function openImprint() {
+      document.getElementById('imprint').style.display = 'flex';
+    }
+
+    function closeImprint() {
+      document.getElementById('imprint').style.display = 'none';
     }
   </script>
 </body>
