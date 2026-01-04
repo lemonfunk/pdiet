@@ -1,216 +1,141 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Die Physiker-Diät - Einfach & Effektiv Abnehmen</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #ffffff;
-        }
-
-        .hero {
-            background: #ffffff;
-            padding: 40px 20px 30px;
-            text-align: center;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        .logo-container {
-            margin-bottom: 20px;
-        }
-
-        .logo {
-            max-width: 450px;
-            width: 100%;
-            height: auto;
-        }
-
-        .tagline {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 25px;
-            font-weight: 300;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-button {
-            background: #5cb85c;
-            color: white;
-            padding: 12px 30px;
-            font-size: 1em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-button:hover {
-            background: #4cae4c;
-            transform: translateY(-2px);
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-
-        .feature {
-            background: #f8f8f8;
-            padding: 25px;
-            border-radius: 8px;
-            border-left: 4px solid #5cb85c;
-        }
-
-        .feature h3 {
-            color: #333;
-            font-size: 1.1em;
-            margin-bottom: 8px;
-        }
-
-        .feature p {
-            color: #666;
-            font-size: 0.95em;
-        }
-
-        .info-box {
-            background: #f8f8f8;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-            border-left: 4px solid #5cb85c;
-        }
-
-        .info-box h2 {
-            color: #5cb85c;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        .info-items {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .info-item {
-            text-align: center;
-            flex: 1;
-            min-width: 150px;
-        }
-
-        .info-icon {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        .info-item h4 {
-            font-size: 1em;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        .info-item p {
-            font-size: 0.85em;
-            color: #666;
-        }
-
-        .tester-section {
-            text-align: center;
-            padding: 35px;
-            background: #f8f8f8;
-            border-radius: 8px;
-            border: 2px solid #5cb85c;
-        }
-
-        .tester-section h2 {
-            color: #333;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-
-        .tester-section p {
-            color: #666;
-            margin-bottom: 20px;
-            font-size: 0.95em;
-        }
-
-        .email-highlight {
-            font-size: 1.3em;
-            color: #5cb85c;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-
-        .email-button {
-            background: #5cb85c;
-            color: white;
-            padding: 12px 35px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1em;
-            font-weight: 500;
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
-
-        .email-button:hover {
-            background: #4cae4c;
-            transform: translateY(-2px);
-        }
-
-        footer {
-            background: #2d2d2d;
-            color: #ccc;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.85em;
-        }
-
-        @media (max-width: 768px) {
-            .logo {
-                max-width: 100%;
-            }
-
-            .tagline {
-                font-size: 1em;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .info-items {
-                flex-direction: column;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Die Physiker Diät – App Tester gesucht</title>
+  <style>
+    :root {
+      --green: #2e7d32;
+      --dark: #2b2b2b;
+      --gray: #555;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+    }
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    header img {
+      height: 56px;
+      width: auto;
+    }
+    h1 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      margin: 0;
+    }
+    .subtitle {
+      color: var(--gray);
+      max-width: 720px;
+      margin: 0.75rem 0 2rem 0;
+      font-size: 1.05rem;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .feature {
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .feature h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
+      color: var(--green);
+    }
+    .feature p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--gray);
+      line-height: 1.4;
+    }
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .cta a {
+      background: var(--green);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .cta span {
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    @media (max-height: 700px) {
+      .page { padding: 2rem 1rem; }
+      .subtitle { margin-bottom: 1.25rem; }
+      .features { margin-bottom: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-    <div class="hero">
-        <div class="logo-container">
-            <img src="data:image/png;base64,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ACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEEHACADBB0AgAwQdAAAMkDQAQDIAEE
+  <main class="page">
+    <header>
+      <img src="pdiet_logowide_tr.png" alt="Die Physiker Diät Logo" />
+      <h1>Die Physiker Diät</h1>
+    </header>
 
+    <p class="subtitle">
+      Eine minimalistische App, um Erfolge bei der Gewichtsreduktion einfach zu <strong>tracken</strong> und
+      übersichtlich <strong>darzustellen</strong> – ohne Registrierung, ohne Cloud, ohne Datenspuren.
+    </p>
+
+    <section class="features">
+      <div class="feature">
+        <h3>🔒 100 % privat</h3>
+        <p>Kein Benutzeraccount, keine persönlichen Daten. Alle Informationen bleiben ausschließlich lokal auf deinem Handy.</p>
+      </div>
+      <div class="feature">
+        <h3>📈 Klar & fokussiert</h3>
+        <p>Reduziert auf das Wesentliche: Gewicht erfassen, Fortschritt sehen, Motivation behalten.</p>
+      </div>
+      <div class="feature">
+        <h3>⚡ Schnell startklar</h3>
+        <p>App öffnen und loslegen – ohne Setup, ohne Anmeldung, ohne Umwege.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <a href="mailto:pdiet@gmx.net?subject=App%20Test%20–%20Die%20Physiker%20Diät">Als App‑Tester melden</a>
+      <span>Bitte mit deiner <strong>Google‑E‑Mail‑Adresse</strong> kontaktieren</span>
+    </section>
+
+    <footer>
+      App‑Tester gesucht · Die Physiker Diät
+    </footer>
+  </main>
+</body>
+</html>
